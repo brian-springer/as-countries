@@ -1,0 +1,14 @@
+{
+  "appIsExample": false,
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "color": "#FFDEDE",
+  "evaluationVersion": 2,
+  "icon": "globe",
+  "pages": [
+    {
+      "id": "Page1",
+      "isDefault": true
+    }
+  ]
+}
