@@ -1,0 +1,7 @@
+{
+  "name": "RestCountriesAPI",
+  "pluginId": "restapi-plugin",
+  "datasourceConfiguration": {
+    "url": "https://restcountries.com"
+  }
+}

@@ -8,23 +8,16 @@ This app is built using Appsmith. Turn any datasource into an internal app in mi
 
 ### Demo Setup Using the Rest Countries API
 
-Follow these steps to create a simple countries demo inside Appsmith:
+The repository now includes the JSON files required to load a simple Appsmith
+application.  The app contains:
 
-1. Create a new API datasource inside Appsmith and name it **GetCountries**.
-   - Method: `GET`
-   - URL: `https://restcountries.com/v3.1/all`
+1. A REST API datasource configured at `https://restcountries.com`.
+2. A query named **GetCountries** that calls `/v3.1/all` and runs on page load.
+3. A page with a **Table** widget bound to `{{ GetCountries.data }}`.
+4. A **List** widget that displays each country's flag and name using Image and
+   Text widgets.
 
-2. Drag a **Table** widget onto the canvas and set its *Table Data* property to:
-   ```{{ GetCountries.data }}```
-
-3. For a more visual list, use a **List** widget. Inside the list:
-   - Add an **Image** widget with the *Image* property set to `{{ currentItem.flags.png }}`.
-   - Add a **Text** widget and set its *Text* property to `{{ currentItem.name.common }}`.
-   - Display fields like capital or region using additional Text widgets.
-
-4. Run **GetCountries** on page load so the widget populates automatically.
-
-These steps will let you explore the Rest Countries API quickly with minimal setup.
+Importing this repository into Appsmith will create the demo automatically so you can explore the API without any manual setup.
 
 
 ### [Github](https://github.com/appsmithorg/appsmith) • [Docs](https://docs.appsmith.com/?utm_source=github&utm_medium=social&utm_content=appsmith_docs&utm_campaign=null&utm_term=appsmith_docs) • [Community](https://community.appsmith.com/) • [Tutorials](https://github.com/appsmithorg/appsmith/tree/update/readme#tutorials) • [Youtube](https://www.youtube.com/appsmith) • [Discord](https://discord.gg/rBTTVJp)

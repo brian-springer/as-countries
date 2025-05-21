@@ -1,0 +1,11 @@
+{
+  "name": "GetCountries",
+  "datasource": {
+    "name": "RestCountriesAPI"
+  },
+  "actionConfiguration": {
+    "httpMethod": "GET",
+    "path": "/v3.1/all"
+  },
+  "executeOnLoad": true
+}

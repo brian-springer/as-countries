@@ -22,6 +22,48 @@
           "type": "CANVAS_WIDGET",
           "version": 93,
           "widgetId": "0",
+          "children": [
+            {
+              "widgetName": "Table1",
+              "type": "TABLE_WIDGET",
+              "widgetId": "table1",
+              "topRow": 0,
+              "bottomRow": 20,
+              "leftColumn": 0,
+              "rightColumn": 24,
+              "parentId": "0",
+              "tableData": "{{ GetCountries.data }}",
+              "dynamicBindingPathList": [ { "key": "tableData" } ]
+            },
+            {
+              "widgetName": "List1",
+              "type": "LIST_WIDGET",
+              "widgetId": "list1",
+              "topRow": 21,
+              "bottomRow": 45,
+              "leftColumn": 0,
+              "rightColumn": 24,
+              "parentId": "0",
+              "listData": "{{ GetCountries.data }}",
+              "dynamicBindingPathList": [ { "key": "listData" } ],
+              "children": [
+                {
+                  "widgetName": "Image1",
+                  "type": "IMAGE_WIDGET",
+                  "widgetId": "image1",
+                  "image": "{{ currentItem.flags.png }}",
+                  "dynamicBindingPathList": [ { "key": "image" } ]
+                },
+                {
+                  "widgetName": "Text1",
+                  "type": "TEXT_WIDGET",
+                  "widgetId": "text1",
+                  "text": "{{ currentItem.name.common }}",
+                  "dynamicBindingPathList": [ { "key": "text" } ]
+                }
+              ]
+            }
+          ],
           "widgetName": "MainContainer"
         }
       }
